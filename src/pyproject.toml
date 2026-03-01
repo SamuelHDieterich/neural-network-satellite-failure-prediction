@@ -5,5 +5,11 @@ description = "A neural network model to predict satellite failures using the ES
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "polars>=1.38.1",
+    "pandas>=3.0.1",
+    "polars[pandas]>=1.38.1",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.2.0",
 ]
